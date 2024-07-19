@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Manipulation Project</title>
+  </head>
+  <body>
+    <div id="container" class="h-screen flex font-poppins bg-zinc-900 text-white">
+      <div id="text-area" class=" w-3/4 h-full bg-red-300 text-xl">
+
+      </div>
+      <div id="properties" class="w-1/4 flex justify-center items-center">
+        <div class="h-fit w-fit flex flex-col items-start gap-10">
+          <input
+          id="text-input"
+          placeholder="Enter text here..."
+          class="outline-none border px-2 py-4 w-full text-red-900 bg-transparent"
+        ></input>
+        
+        <div class="flex items-center justify-center gap-2">
+          <label for="font-size">Font Size:</label>
+          <input class="mt-1" type="range" id="font-size" min="10" max="100" value="16" />
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <label for="font-color">Font Color:</label>
+          <input type="color" id="font-color" value="#000000" />
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <label for="font-family">Font Family:</label>
+          <select class="text-black bg-slate-400" id="font-family">
+            <option class="bg-slate-400" value="Arial">Arial</option>
+            <option class="bg-slate-400" value="Verdana">Verdana</option>
+            <option class="bg-slate-400" value="Times New Roman">Times New Roman</option>
+            <option class="bg-slate-400" value="Courier New">Courier New</option>
+            </select>
+        </div>
+        <button id="add-text" class="p-4 px-10 w-full bg-red-400 hover:bg-slate-400 hover:text-white transition-all duration-300 font-normal text-lg">Add Text</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
